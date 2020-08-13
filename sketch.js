@@ -44,7 +44,7 @@ function draw() {
 	}
 
 	if(frameCount - frameAtual < N*tempoEmbaralhamento){
-		//embaralha();
+		embaralha();
 	} else if(checa()){
 		cor = "#38ff67";
 		fill('purple');
