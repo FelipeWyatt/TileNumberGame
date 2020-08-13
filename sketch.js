@@ -44,12 +44,30 @@ function draw() {
 	}
 
 	if(frameCount - frameAtual < N*tempoEmbaralhamento){
-		embaralha();
+		//embaralha();
 	} else if(checa()){
 		cor = "#38ff67";
+		fill('purple');
+		rectMode(CENTER);
+		rect(250,250, 500, 100);
+		textSize(36);
+		fill(0);
 
+		if(N == 2){
+			text('Eu fazia isso com 1 ano', 250, 250);
+		} else if(N == 3){
+			text('Eu fazia isso com 3 anos', 250, 250);
+		} else if(N == 4){
+			text('4 eh facil, esperava mais', 250, 250);
+		} else if(N == 5){
+			text('Harvard: Mano quer um curso?', 250, 250);
+		} else if(N == 6){
+			text('Quer ser meu parente?', 250, 250);
+		} else if(N >= 7){
+			text('BOA ja pode ganhar nobel', 250, 250);
+
+		}
 	}
-
 }
 
 
